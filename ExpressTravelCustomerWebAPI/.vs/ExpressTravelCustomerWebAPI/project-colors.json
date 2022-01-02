@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1f6238ca-05d7-4a3e-9c8d-ac1693569c27": {
+      "ProjectGuid": "1f6238ca-05d7-4a3e-9c8d-ac1693569c27",
+      "DisplayName": "ExpressTravelCustomerWebAPI",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}
