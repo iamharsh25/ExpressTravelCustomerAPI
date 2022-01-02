@@ -14,11 +14,11 @@ class ContactService {
     }
 
     putContact(id, entity) {
-        return http.put("api/Contact/" + id, entity);
+        return http.put("api/Contact/" + id, JSON.stringify(entity));
     }
 
-    postContact(id, entity) {
-        return http.post("api/Contact", entity);
+    postContact(entity) {
+        return http.post("api/Contact", JSON.stringify(entity));
     }
 
     deleteContact(id) {

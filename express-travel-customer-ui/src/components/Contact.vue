@@ -142,7 +142,16 @@ export default {
       this.isUpdate = true
     },
     onUpdate() {
-      ContactService.putContact(this.selectedContactId, this.entity)
+      var temp = {
+        salutationId: this.entity.salutationId,
+        firstName: this.entity.firstName,
+        lastName: this.entity.lastName,
+        dob: new Date(this.entity.dob).toISOString(),
+        isStaff: this.entity.isStaff
+      }
+
+
+      ContactService.putContact(this.selectedContactId, temp)
         .then((response) => {
           this.reference = response.data;
           // console.log(response.data);
@@ -162,7 +171,15 @@ export default {
         });
     },
     onInsert() {
-      ContactService.postContact(this.entity)
+      var temp = {
+        salutationId: this.entity.salutationId,
+        firstName: this.entity.firstName,
+        lastName: this.entity.lastName,
+        dob: new Date(this.entity.dob).toISOString(),
+        isStaff: this.entity.isStaff
+      }
+
+      ContactService.postContact(temp)
         .then((response) => {
           this.reference = response.data;
           // console.log(response.data);
